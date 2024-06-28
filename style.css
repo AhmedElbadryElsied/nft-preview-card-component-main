@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--very-dark-blue : hsl(216, 61%, 11%);
+--dark-blue-main: hsl(213, 56%, 16%);
+--dark-blue: hsl(214, 23%, 55%);
+}
+body{
+    font-family: "Outfit", sans-serif;
+    display: grid;
+    place-content: center;
+    background: var(--very-dark-blue);
+    min-height: 100vh;
+
+}
+#product{
+background: var(--dark-blue-main);
+display: grid;
+grid-template-columns: 1fr;
+width: 350px;
+margin: 3rem;
+padding: 2rem;
+border-radius: 10px;
+}
+#product .Equilibrium{
+    width:100%;
+    border-radius: 10px;
+    
+}
+#product h1{
+    color: #fff;
+    margin: 1.3rem 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+#product>p{
+    color: var(--dark-blue);
+    font-size: 18px;
+    font-weight: 300;
+}
+#product .ouer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.3rem 0;
+    padding-bottom:30px ;
+    border-bottom: 0.3px solid var(--dark-blue);
+}
+#product  div{
+    display: flex;
+    align-items: center;
+    
+}
+#product .ouer .icon-ethereum p{
+    color: var(--Cyan);
+    margin-left: 5px;
+}
+#product .ouer .icon-clock p,
+#product .img p{
+    color: var(--dark-blue);
+    margin-left: 5px;
+}
+#product .img img{
+    width: 50px;
+}
+#product .img p span{
+    color: #fff;
+    font-weight: 300;
+}
